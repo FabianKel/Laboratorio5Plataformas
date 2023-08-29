@@ -18,7 +18,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
-import com.kelson.laboratorio5.ui.theme.Laboratorio5Theme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -67,7 +66,7 @@ fun Menu(){
             val mContext = LocalContext.current
             Button(onClick = {
 
-                mContext.startActivity(Intent(mContext, Activity1::class.java))
+                mContext.startActivity(Intent(mContext, Activity3::class.java))
             }
             ) {
                 Text("Settings", color = Color.White)
